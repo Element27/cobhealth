@@ -1,5 +1,5 @@
 import React from 'react'
-import { CommunityIcon, PersonHeartsIcon, ScheduleIcon, VennDiagramIcon } from '../../Assets/Icons/Icons'
+import { PersonHeartsIcon, ScheduleIcon, VennDiagramIcon } from '../../Assets/Icons/Icons'
 
 const Features = () => {
   return (
