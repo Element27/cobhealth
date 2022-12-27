@@ -72,3 +72,30 @@ export function CommunityIcon(props) {
     </svg>
   );
 }
+
+export function PersonHeartsIcon(props) {
+  return (
+    <svg
+      fill="currentColor"
+      viewBox="0 0 16 16"
+      height="1em"
+      width="1em"
+      {...props}
+    >
+      <path
+        fillRule="evenodd"
+        d="M11.5 1.246c.832-.855 2.913.642 0 2.566-2.913-1.924-.832-3.421 0-2.566zM9 5a3 3 0 11-6 0 3 3 0 016 0zm-9 8c0 1 1 1 1 1h10s1 0 1-1-1-4-6-4-6 3-6 4zm13.5-8.09c1.387-1.425 4.855 1.07 0 4.277-4.854-3.207-1.387-5.702 0-4.276zM15 2.165c.555-.57 1.942.428 0 1.711-1.942-1.283-.555-2.281 0-1.71z"
+      />
+    </svg>
+  );
+}
+
+export function VennDiagramIcon(props) {
+  return (
+    <svg fill="none" viewBox="0 0 15 15" height="1em" width="1em" {...props}>
+      <path stroke="currentColor" d="M2.5 9.5a5 5 0 1110 0 5 5 0 01-10 0z" />
+      <path stroke="currentColor" d="M.5 5.5a5 5 0 1110 0 5 5 0 01-10 0z" />
+      <path stroke="currentColor" d="M4.5 5.5a5 5 0 1110 0 5 5 0 01-10 0z" />
+    </svg>
+  );
+}
