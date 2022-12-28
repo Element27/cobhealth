@@ -12,7 +12,7 @@ const NavBar = () => {
   return (
     <div className="mx-auto p-5 flex items-center justify-between flex-wrap bg-white/40">
 
-      <div className='flex justify-between w-full md:w-auto items-center'>
+      <div className='container flex justify-between w-full md:w-auto items-center'>
         <NavLink
           to="/"
           className="title-font font-medium flex items-center mb-4 md:mb-0">

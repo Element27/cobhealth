@@ -5,9 +5,10 @@ import ForgotPassWord from './Pages/AuthPages/ForgotPassWord.jsx';
 import ResetPassword from './Pages/AuthPages/ResetPassword.jsx';
 import SignIn from './Pages/AuthPages/SignIn.jsx';
 import SignUp from './Pages/AuthPages/SignUp.jsx';
-
-// pages 
 import LandingPage from './Pages/LangingPage/LandingPage.jsx'
+
+// Patient Dashboard pages 
+import PatientDashboard from './Pages/PatientDashboard/PatientDashboard.jsx';
 
 function App() {
   return (
@@ -20,6 +21,10 @@ function App() {
         <Route path="signin" element={<SignIn />} />
         <Route path="forgotpassword" element={<ForgotPassWord />} />
         <Route path='resetpassword' element={<ResetPassword />} />
+
+        {/* Patient Dashboard */}
+
+        <Route path='dashboard' element={<PatientDashboard />} />
       </Routes>
     </div>
   );

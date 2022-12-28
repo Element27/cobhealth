@@ -128,3 +128,81 @@ export function ArrowBackIcon(props) {
     </svg>
   );
 }
+
+export function PreviousOutlineIcon(props) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      height="1em"
+      width="1em"
+      {...props}
+    >
+      <path d="M2 3h17a2 2 0 012 2v4h-2V5H2v14h17v-4h2v4a2 2 0 01-2 2H2a2 2 0 01-2-2V5a2 2 0 012-2m15 12v-2h7v-2h-7V9l-4 3 4 3M4 13h7v-2H4v2m0-4h7V7H4v2m0 8h4v-2H4v2z" />
+    </svg>
+  );
+}
+
+export function NextOutlineIcon(props) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      height="1em"
+      width="1em"
+      {...props}
+    >
+      <path d="M22 3H5a2 2 0 00-2 2v4h2V5h17v14H5v-4H3v4a2 2 0 002 2h17a2 2 0 002-2V5a2 2 0 00-2-2M7 15v-2H0v-2h7V9l4 3-4 3m13-2h-7v-2h7v2m0-4h-7V7h7v2m-3 8h-4v-2h4v2z" />
+    </svg>
+  );
+}
+
+export function ViewListIcon(props) {
+  return (
+    <svg
+      fill="currentColor"
+      viewBox="0 0 16 16"
+      height="1em"
+      width="1em"
+      {...props}
+    >
+      <path d="M3 4.5h10a2 2 0 012 2v3a2 2 0 01-2 2H3a2 2 0 01-2-2v-3a2 2 0 012-2zm0 1a1 1 0 00-1 1v3a1 1 0 001 1h10a1 1 0 001-1v-3a1 1 0 00-1-1H3zM1 2a.5.5 0 01.5-.5h13a.5.5 0 010 1h-13A.5.5 0 011 2zm0 12a.5.5 0 01.5-.5h13a.5.5 0 010 1h-13A.5.5 0 011 14z" />
+    </svg>
+  );
+}
+
+export function AddOutlineIcon(props) {
+  return (
+    <svg
+      viewBox="0 0 512 512"
+      fill="currentColor"
+      height="1em"
+      width="1em"
+      {...props}
+    >
+      <path
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={32}
+        d="M256 112v288M400 256H112"
+      />
+    </svg>
+  );
+}
+
+
+export function UserIcon(props) {
+  return (
+    <svg
+      viewBox="0 0 512 512"
+      fill="currentColor"
+      height="1em"
+      width="1em"
+      {...props}
+    >
+      <path d="M399 384.2c-22.1-38.4-63.6-64.2-111-64.2h-64c-47.4 0-88.9 25.8-111 64.2 35.2 39.2 86.2 63.8 143 63.8s107.8-24.7 143-63.8zM512 256c0 141.4-114.6 256-256 256S0 397.4 0 256 114.6 0 256 0s256 114.6 256 256zm-256 16c39.8 0 72-32.2 72-72s-32.2-72-72-72-72 32.2-72 72 32.2 72 72 72z" />
+    </svg>
+  );
+}
