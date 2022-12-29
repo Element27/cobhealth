@@ -1,11 +1,13 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import PDTopHeader from '../PDTop/PDTopHeader'
+import EditNOKinDetials from './EditNOKinDetials'
 import EditProfile from './EditProfile'
 import PatienceNOKin from './PatienceNOKin'
 
 const PatientProfile = () => {
   const [editPopup, setEditPopup] = useState(false)
+  const [editNOKPopup, setEditNOKPopup] = useState(false)
 
 
   return (
@@ -75,7 +77,7 @@ const PatientProfile = () => {
           </div>
         </div>
 
-        <PatienceNOKin />
+        <PatienceNOKin setEditNOKPopup={setEditNOKPopup} editNOKPopup={editNOKPopup} />
       </div>
 
       {/* Pop up for editing patient profile */}
@@ -83,6 +85,13 @@ const PatientProfile = () => {
         <div className='fixed w-screen h-full top-0 left-0 flex items-center justify-center scroll'>
           <EditProfile />
           <div className='absolute w-screen h-screen bg-black/60' onClick={() => setEditPopup(!editPopup)}></div>
+        </div> : ""}
+
+      {/* Pop up for editing Nexk of kin profile */}
+      {editNOKPopup ?
+        <div className='fixed w-screen h-full top-0 left-0 flex items-center justify-center scroll'>
+          <EditNOKinDetials />
+          <div className='absolute w-screen h-screen bg-black/60' onClick={() => setEditNOKPopup(!editNOKPopup)}></div>
         </div> : ""}
 
     </section>

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const PatienceNOKin = () => {
+const PatienceNOKin = ({ setEditNOKPopup, editNOKPopup }) => {
   return (
     <div className="h-full text-center sm:text-left">
       {/* 
@@ -41,7 +41,7 @@ const PatienceNOKin = () => {
           </tr>
           <tr>
             <td className="px-4 py-1">
-              <button className="text-white w-full font-bold items-center bg-blue-900 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded hover:text-blue-900 text-base">Edit</button>
+              <button onClick={() => setEditNOKPopup(!editNOKPopup)} className="text-white w-full font-bold items-center bg-blue-900 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded hover:text-blue-900 text-base">Edit</button>
             </td>
           </tr>
 
