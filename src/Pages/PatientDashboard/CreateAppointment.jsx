@@ -6,7 +6,6 @@ import { inputStyling, textareaStyling, primaryButtonStyling } from '../../tailw
 
 const CreateAppointment = () => {
 
-  // TODO: Create a js file that will hold all repeated styling and import them in various point of use
 
   // const CreateAppointmentSchema = Yup.object().shape({
   //   scheduleTime: Yup.date().required("* required"),

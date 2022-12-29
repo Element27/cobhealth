@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import PDTopHeader from '../PDTop/PDTopHeader'
+import EditProfile from './EditProfile'
 import PatienceNOKin from './PatienceNOKin'
 
 const PatientProfile = () => {
+  const [editPopup, setEditPopup] = useState(false)
+
+
   return (
     <section className="text-gray-600 body-font">
       <PDTopHeader />
@@ -62,7 +66,7 @@ const PatientProfile = () => {
                 </tr>
                 <tr>
                   <td className="px-4 py-1">
-                    <button className="text-white w-full font-bold items-center bg-blue-900 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded hover:text-blue-900 text-base">Edit</button>
+                    <button onClick={() => setEditPopup(!editPopup)} className="text-white w-full font-bold items-center bg-blue-900 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded hover:text-blue-900 text-base">Edit</button>
                   </td>
                 </tr>
 
@@ -74,6 +78,12 @@ const PatientProfile = () => {
         <PatienceNOKin />
       </div>
 
+      {/* Pop up for editing patient profile */}
+      {editPopup ?
+        <div className='fixed w-screen h-full top-0 left-0 flex items-center justify-center scroll'>
+          <EditProfile />
+          <div className='absolute w-screen h-screen bg-black/60' onClick={() => setEditPopup(!editPopup)}></div>
+        </div> : ""}
 
     </section>
   )

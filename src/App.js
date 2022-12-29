@@ -12,6 +12,9 @@ import PatientDashboard from './Pages/PatientDashboard/PatientDashboard.jsx';
 import PatientProfile from './Pages/PatientDashboard/PatientProfile/PatientProfile.jsx';
 
 function App() {
+
+
+
   return (
     <div className="App">
       <Routes>
