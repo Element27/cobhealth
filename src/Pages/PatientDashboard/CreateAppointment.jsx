@@ -2,9 +2,9 @@ import React from 'react'
 import { Formik } from 'formik'
 // import * as Yup from "yup";
 import { inputStyling, textareaStyling, primaryButtonStyling } from '../../tailwindStyling'
+import { CloseIcon } from '../../Assets/Icons/Icons'
 
-
-const CreateAppointment = () => {
+const CreateAppointment = ({ setSchedulePopup }) => {
 
 
   // const CreateAppointmentSchema = Yup.object().shape({
@@ -36,10 +36,10 @@ const CreateAppointment = () => {
         handleReset,
         isSubmitting,
       }) => (
-        <form className="text-gray-600 body-font w-full md:w-1/3 flex items-center justify-center z-10">
+        <form className=" text-gray-600 body-font w-full md:w-1/3 flex items-center justify-center z-10">
 
-          <div className="rounded-lg m-4 p-8 flex flex-col bg-gray-100  w-full mt-10 md:mt-0">
-
+          <div className="relative rounded-lg m-4 p-8 flex flex-col bg-gray-100  w-full mt-10 md:mt-0">
+            <CloseIcon onClick={() => setSchedulePopup(false)} className="absolute top-4 right-4 text-lg cursor-pointer" />
 
             <div className="relative mb-4">
               <label for="appointmentDate" className="leading-7 text-sm text-gray-600">Choose Date</label>

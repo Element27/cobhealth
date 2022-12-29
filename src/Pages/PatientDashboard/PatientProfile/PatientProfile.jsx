@@ -83,14 +83,14 @@ const PatientProfile = () => {
       {/* Pop up for editing patient profile */}
       {editPopup ?
         <div className='fixed w-screen h-full top-0 left-0 flex items-center justify-center scroll'>
-          <EditProfile />
+          <EditProfile setEditPopup={setEditPopup} />
           <div className='absolute w-screen h-screen bg-black/60' onClick={() => setEditPopup(!editPopup)}></div>
         </div> : ""}
 
       {/* Pop up for editing Nexk of kin profile */}
       {editNOKPopup ?
         <div className='fixed w-screen h-full top-0 left-0 flex items-center justify-center scroll'>
-          <EditNOKinDetials />
+          <EditNOKinDetials setEditNOKPopup={setEditNOKPopup} />
           <div className='absolute w-screen h-screen bg-black/60' onClick={() => setEditNOKPopup(!editNOKPopup)}></div>
         </div> : ""}
 

@@ -1,8 +1,9 @@
 import { Formik } from 'formik'
 import React from 'react'
+import { CloseIcon } from '../../../Assets/Icons/Icons'
 import { inputStyling, primaryButtonStyling } from '../../../tailwindStyling'
 
-const EditNOKinDetials = () => {
+const EditNOKinDetials = ({ setEditNOKPopup }) => {
   // const CreateAppointmentSchema = Yup.object().shape({
   //   scheduleTime: Yup.date().required("* required"),
   //   scheduleDate: Yup.date().required("* required"),
@@ -39,7 +40,9 @@ const EditNOKinDetials = () => {
       }) => (
         <form className="text-gray-600 body-font w-full md:w-3/4 lg:w-2/4 flex items-center justify-center z-10">
 
-          <div className="rounded-lg m-4 p-8 flex flex-col bg-gray-100  w-full mt-10 md:mt-0">
+          <div className="relative rounded-lg m-4 p-8 flex flex-col bg-gray-100  w-full mt-10 md:mt-0">
+
+            <CloseIcon onClick={() => setEditNOKPopup(false)} className="absolute top-4 right-4 text-lg cursor-pointer" />
 
             <div className='flex flex-col lg:flex-row justify-between items-center'>
               {/* First Name */}
