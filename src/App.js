@@ -5,6 +5,8 @@ import ForgotPassWord from './Pages/AuthPages/ForgotPassWord.jsx';
 import ResetPassword from './Pages/AuthPages/ResetPassword.jsx';
 import SignIn from './Pages/AuthPages/SignIn.jsx';
 import SignUp from './Pages/AuthPages/SignUp.jsx';
+import DoctorDashboard from './Pages/DoctorDashboard/DoctorDashboard.jsx';
+import DoctorProfile from './Pages/DoctorDashboard/DoctorProfile/DoctorProfile.jsx';
 import LandingPage from './Pages/LangingPage/LandingPage.jsx'
 
 // Patient Dashboard pages 
@@ -27,9 +29,12 @@ function App() {
         <Route path='resetpassword' element={<ResetPassword />} />
 
         {/* Patient Dashboard */}
-
         <Route path='dashboard' element={<PatientDashboard />} />
         <Route path='/patientprofile' element={<PatientProfile />} />
+
+        {/* Doctor Patient */}
+        <Route path='/doc' element={<DoctorDashboard />} />
+        <Route path='/doctorprofile' element={<DoctorProfile />} />
 
       </Routes>
     </div>

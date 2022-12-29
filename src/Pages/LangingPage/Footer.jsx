@@ -35,9 +35,9 @@ const Footer = () => {
       <div className='grid items-center justify-center '>
 
         <span className='text-sm text-gray-100 font-semibold'> Temporary nav to allow dashboard access</span>
-        <nav className="text-base text-gray-900 text-center grid md:flex justify-center items-center mx-auto">
+        <nav className="text-base text-gray-900 text-center flex flex-col justify-center items-center mx-auto mb-8">
           <NavLink to='/dashboard' className="mx-4  hover:text-gray-100 font-bold mb-4 md:mb-auto">Patient Dashboard</NavLink>
-
+          <NavLink to='/doc' className="mx-4  hover:text-gray-100 font-bold mb-4 md:mb-auto">Doc Dashboard</NavLink>
         </nav>
       </div>
     </footer>
