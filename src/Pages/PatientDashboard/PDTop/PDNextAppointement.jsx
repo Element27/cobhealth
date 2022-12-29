@@ -1,11 +1,12 @@
 import React from 'react'
 import { NextOutlineIcon } from '../../../Assets/Icons/Icons'
+import { PDTopNextStyling } from './PDTopStyling'
 
 const PDNextAppointement = () => {
   return (
     <div className=' w-2/3 h-24 mx-4 border border-gray-300 rounded-xl overflow-hidden flex flex-col md:flex-row '>
 
-      <div className='w-full md:w-2/5 h-1/2 md:h-full bg-gray-100 py-2 px-4 md:py-4 text-gray-900 hidden md:flex md:flex-col justify-between md:justify-center mb-3 md:mb-0'>
+      <div className={PDTopNextStyling}>
         <NextOutlineIcon className=' text-2xl md:mb-2' />
         <p className='text-base'>Next Appointment</p>
       </div>

@@ -9,7 +9,7 @@ const Hero = () => {
     <section className=" mx-auto text-gray-400 body-font w-screen h-screen bg-hero-bg bg-cover bg-center">
       <div className=" w-full h-full  bg-black/80">
         <NavBar />
-        <div className='container flex h-full items-center justify-center flex-col px-6'>
+        <div className='container mx-auto flex h-full items-center justify-center flex-col px-6'>
 
           <div className="text-center lg:w-2/3 w-full">
             <h1 className="title-font sm:text-4xl text-3xl mb-4 font-bold  text-[#0f6198] ">{bannerHeader}</h1>

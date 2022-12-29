@@ -9,6 +9,7 @@ import LandingPage from './Pages/LangingPage/LandingPage.jsx'
 
 // Patient Dashboard pages 
 import PatientDashboard from './Pages/PatientDashboard/PatientDashboard.jsx';
+import PatientProfile from './Pages/PatientDashboard/PatientProfile/PatientProfile.jsx';
 
 function App() {
   return (
@@ -25,6 +26,8 @@ function App() {
         {/* Patient Dashboard */}
 
         <Route path='dashboard' element={<PatientDashboard />} />
+        <Route path='/patientprofile' element={<PatientProfile />} />
+
       </Routes>
     </div>
   );

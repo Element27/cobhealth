@@ -38,7 +38,7 @@ const PDTopHeader = () => {
       {smMenu ?
         <div className='md:hidden grid text-base items-center justify-end w-full text-right'>
           <div className='grid justify-center w-full font-bold'>
-            <p className=" text-blue-900 font-bold mb-4 cursor-pointer">Profile</p>
+            <NavLink to="/patientprofile" className=" text-blue-900 font-bold mb-4 cursor-pointer">Profile</NavLink>
             <Link to='/' className="text-white w-fit font-bold items-center bg-blue-900 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded hover:text-blue-900 text-base mb-8">Sign Out
             </Link>
           </div>
@@ -49,15 +49,11 @@ const PDTopHeader = () => {
 
       {/* Large screen */}
       <div className='hidden text-base md:flex items-center justify-end text-right w-full'>
-        {/* <div onClick={() => setMdMenu(!mdMenu)} className='flex  items-center justify-center cursor-pointer'>
-          <UserIcon className='text-blue-900 text-4xl mr-5' />
-          <p className="mr-12 text-blue-900 font-bold">UserFirstName</p>
-        </div> */}
 
         {mdMenu ?
-          <div className='p-4 mr-8'>
-            <p className=" text-blue-900 font-bold mb-4 cursor-pointer">Profile</p>
-            <Link to='/' className="text-white w-fit font-bold items-center bg-blue-900 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded hover:text-blue-900 text-base mb-8">Sign Out
+          <div className='px-4 mr-8 flex flex-col'>
+            <NavLink to="/patientprofile" className=" text-blue-900 font-bold cursor-pointer mb-4">Profile</NavLink>
+            <Link to='/' className="text-white w-fit font-bold items-center bg-blue-900 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded hover:text-blue-900 text-base">Sign Out
             </Link>
           </div>
           : ""}
