@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { SIGNIN, SIGNUP } from '../../routes'
 import NavBar from './NavBar'
 
 const Hero = () => {
@@ -15,9 +16,9 @@ const Hero = () => {
             <h1 className="title-font sm:text-4xl text-3xl mb-4 font-bold  text-[#0f6198] ">{bannerHeader}</h1>
             <p className="mb-8 leading-relaxed">{bannerText}</p>
             <div className="grid md:flex justify-evenly md:justify-center">
-              <Link to='signup' className="text-white font-bold items-center bg-blue-900 border-0 py-1 px-5 focus:outline-none hover:bg-gray-200 rounded hover:text-blue-900 text-base mt-4 md:mt-0 md:mx-8">Sign Up
+              <Link to={SIGNUP} className="text-white font-bold items-center bg-blue-900 border-0 py-1 px-5 focus:outline-none hover:bg-gray-200 rounded hover:text-blue-900 text-base mt-4 md:mt-0 md:mx-8">Sign Up
               </Link>
-              <Link to='signin' className="text-blue-900 font-bold items-center bg-gray-100 border-0 py-1 px-5 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0  md:mx-8">Sign In</Link>
+              <Link to={SIGNIN} className="text-blue-900 font-bold items-center bg-gray-100 border-0 py-1 px-5 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0  md:mx-8">Sign In</Link>
             </div>
           </div>
         </div>

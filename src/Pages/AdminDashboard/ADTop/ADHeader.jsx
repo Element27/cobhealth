@@ -1,11 +1,10 @@
 import React, { useState } from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { UserIcon } from '../../../Assets/Icons/Icons'
 import smlogo from '../../../cobhealth-logo.png'
 import { HOME } from '../../../routes'
 
-
-const PDTopHeader = () => {
+const ADHeader = () => {
 
   const [mdMenu, setMdMenu] = useState(false)
   const [smMenu, setSmMenu] = useState(false)
@@ -14,7 +13,7 @@ const PDTopHeader = () => {
     <div className="mx-auto px-5 py-2 flex items-center justify-between flex-wrap bg-gray-50">
 
       <div className=' flex justify-between  w-full  items-center'> {/* md:w-auto */}
-        <NavLink
+        <Link
           to={HOME}
           className="title-font font-medium flex items-center mb-4 md:mb-0">
           <div className='flex items-center'>
@@ -23,7 +22,7 @@ const PDTopHeader = () => {
               CobHealth
             </p>
           </div>
-        </NavLink>
+        </Link>
         {/* small screen */}
         <UserIcon className='text-blue-900 text-4xl md:hidden' onClick={() => setSmMenu(!smMenu)} />
 
@@ -39,7 +38,7 @@ const PDTopHeader = () => {
       {smMenu ?
         <div className='md:hidden grid text-base items-center justify-end w-full text-right'>
           <div className='grid justify-center w-full font-bold'>
-            <NavLink to={HOME} className=" text-blue-900 font-bold mb-4 cursor-pointer">Profile</NavLink>
+            <Link to={HOME} className=" text-blue-900 font-bold mb-4 cursor-pointer">Profile</Link>
             <Link to={HOME} className="text-white w-fit font-bold items-center bg-blue-900 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded hover:text-blue-900 text-base mb-8">Sign Out
             </Link>
           </div>
@@ -53,7 +52,7 @@ const PDTopHeader = () => {
 
         {mdMenu ?
           <div className='px-4 mr-8 flex flex-col'>
-            <NavLink to={HOME} className=" text-blue-900 font-bold cursor-pointer mb-4">Profile</NavLink>
+            <Link to={HOME} className=" text-blue-900 font-bold cursor-pointer mb-4">Profile</Link>
             <Link to={HOME} className="text-white w-fit font-bold items-center bg-blue-900 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded hover:text-blue-900 text-base">Sign Out
             </Link>
           </div>
@@ -61,8 +60,8 @@ const PDTopHeader = () => {
       </div>
 
     </div>
+
   )
 }
 
-export default PDTopHeader
-
+export default ADHeader

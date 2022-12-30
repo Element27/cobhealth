@@ -1,6 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import smlogo from '../../cobhealth-logo.png'
+import { ABOUT, ADMIN, CONTACT, DASHBOARD, DOCTOR, HOME } from '../../routes'
 
 const Footer = () => {
   return (
@@ -21,9 +22,9 @@ const Footer = () => {
           <div className='grid md:flex items-center justify-center md:justify-between'>
 
             <nav className="text-base  text-center grid md:flex justify-center items-center mx-auto">
-              <NavLink to='/' className="mx-4  hover:text-gray-900 font-bold mb-4 md:mb-auto">Home</NavLink>
-              <NavLink to='/about' className="mx-4  hover:text-gray-900 font-bold mb-4 md:mb-auto">About</NavLink>
-              <NavLink to='/contact' className="mx-4  hover:text-gray-900 font-bold mb-4 md:mb-auto">Contact</NavLink>
+              <NavLink to={HOME} className="mx-4  hover:text-gray-900 font-bold mb-4 md:mb-auto">Home</NavLink>
+              <NavLink to={ABOUT} className="mx-4  hover:text-gray-900 font-bold mb-4 md:mb-auto">About</NavLink>
+              <NavLink to={CONTACT} className="mx-4  hover:text-gray-900 font-bold mb-4 md:mb-auto">Contact</NavLink>
             </nav>
 
             <button className="text-blue-900 font-bold items-center bg-gray-100 border-0 py-1 px-5 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0  md:mx-8">Sign In</button>
@@ -36,8 +37,9 @@ const Footer = () => {
 
         <span className='text-sm text-gray-100 font-semibold'> Temporary nav to allow dashboard access</span>
         <nav className="text-base text-gray-900 text-center flex flex-col justify-center items-center mx-auto mb-8">
-          <NavLink to='/dashboard' className="mx-4  hover:text-gray-100 font-bold mb-4 md:mb-auto">Patient Dashboard</NavLink>
-          <NavLink to='/doc' className="mx-4  hover:text-gray-100 font-bold mb-4 md:mb-auto">Doc Dashboard</NavLink>
+          <NavLink to={DASHBOARD} className="mx-4  hover:text-gray-100 font-bold mb-4 md:mb-auto">Patient Dashboard</NavLink>
+          <NavLink to={DOCTOR} className="mx-4  hover:text-gray-100 font-bold mb-4 md:mb-auto">Doc Dashboard</NavLink>
+          <NavLink to={ADMIN} className="mx-4  hover:text-gray-100 font-bold mb-4 md:mb-auto">Admin Dashboard</NavLink>
         </nav>
       </div>
     </footer>
