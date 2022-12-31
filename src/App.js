@@ -19,7 +19,8 @@ import DoctorProfile from './Pages/DoctorDashboard/DoctorProfile/DoctorProfile.j
 // Admin Dashboard
 import AdminDashboard from './Pages/AdminDashboard/AdminDashboard.jsx';
 // Navlinks from routes
-import { ABOUT, ADMIN, CONTACT, DASHBOARD, DOCTOR, DOCTORPROFILE, FORGOTPASSWORD, HOME, PATIENTPROFILE, RESETPASSWORD, SIGNIN, SIGNUP } from './routes.js';
+import { ABOUT, ADMIN, CONTACT, DASHBOARD, DOCTOR, DOCTORPROFILE, FORGOTPASSWORD, HOME, PATIENTDETAILS, PATIENTPROFILE, RESETPASSWORD, SIGNIN, SIGNUP } from './routes.js';
+import PatientDetails from './Pages/AdminDashboard/Patients/PatientDetails.jsx';
 
 
 function App() {
@@ -48,6 +49,7 @@ function App() {
 
         {/* Admin Dashboard */}
         <Route path={ADMIN} element={<AdminDashboard />} />
+        <Route path={PATIENTDETAILS} element={<PatientDetails />} />
 
       </Routes>
     </div>

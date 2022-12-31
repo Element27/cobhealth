@@ -15,3 +15,4 @@ export const DOCTOR = "/doc"
 export const DOCTORPROFILE = "/doctorprofile"
 // admin dashboard
 export const ADMIN = "/admin"
+export const PATIENTDETAILS = "/patientdetails"

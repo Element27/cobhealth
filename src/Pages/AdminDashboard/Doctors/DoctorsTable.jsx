@@ -8,6 +8,15 @@ const DoctorsTable = () => {
         <div class="flex flex-wrap -m-2">
 
           <DoctorsCard />
+          <DoctorsCard />
+          <DoctorsCard />
+          <DoctorsCard />
+          <DoctorsCard />
+          <DoctorsCard />
+          <DoctorsCard />
+          <DoctorsCard />
+          <DoctorsCard />
+          <DoctorsCard />
         </div>
       </div>
     </section>

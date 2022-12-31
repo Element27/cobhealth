@@ -1,12 +1,12 @@
 import React from 'react'
-import { primaryButtonStyling } from '../../../tailwindStyling'
+import PatientAppointmentDetails from './PatientAppointmentDetails'
+import PatientAppointmentHistory from './PatientAppointmentHistory'
+import PatientNOKDetials from './PatientNOKDetials'
 
-const DoctorDetails = () => {
+const PatientDetails = () => {
   return (
     <section className="text-gray-600 body-font">
-
       <div className="container px-5 py-8 mx-auto">
-
 
         <div className="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left border-b border-gray-500 mb-12 md:mb-16">
 
@@ -32,7 +32,14 @@ const DoctorDetails = () => {
                   <td className="px-4 py-1">8/8/2000</td>
                   <td className="px-4 py-1">22 years old</td>
                 </tr>
-
+                <tr>
+                  <td className="font-semibold px-4 py-1">Genotype:</td>
+                  <td className="px-4 py-1">AS</td>
+                </tr>
+                <tr>
+                  <td className="font-semibold px-4 py-1">Blood Group:</td>
+                  <td className="px-4 py-1">O+</td>
+                </tr>
                 <tr>
                   <td className="font-semibold px-4 py-1">Phone Number:</td>
                   <td className="px-4 py-1">08163177517</td>
@@ -46,41 +53,19 @@ const DoctorDetails = () => {
                   <td className="px-4 py-1">Holden.cld@gmail.com</td>
                 </tr>
 
-
               </tbody>
             </table>
           </div>
         </div>
-        <h3>Education Information</h3>
 
-        <table className="table-auto w-full text-left whitespace-no-wrap overflow-x-scroll">
-          <tbody className=''>
-            <tr>
-              <td className="font-semibold px-4 py-1">Degree:</td>
-              <td className="px-4 py-1">degree here</td>
-            </tr>
-            <tr>
-              <td className="font-semibold px-4 py-1">Institution: </td>
-              <td className="px-4 py-1">Institution here</td>
-            </tr>
-            <tr>
-              <td className="font-semibold px-4 py-1">From: </td>
-              <td className="px-4 py-1">Date:</td>
-              <td className="font-semibold px-4 py-1">To: </td>
-              <td className="px-4 py-1">Date:</td>
-            </tr>
-            <tr>
-              <td className="px-4 py-1">
-                <button className={primaryButtonStyling}>Update Info</button>
-              </td>
-            </tr>
-
-          </tbody>
-
-        </table>
+        <PatientNOKDetials />
+        <PatientAppointmentHistory />
+        {false && <PatientAppointmentDetails />}
       </div>
+
     </section>
+
   )
 }
 
-export default DoctorDetails
+export default PatientDetails
