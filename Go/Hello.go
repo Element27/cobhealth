@@ -1,9 +1,16 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main(){
 
-	fmt.Printf("Go World")
+x:=0
+
+for x < 5{
+	fmt.Println("x =", x)
+	x++
+}
 } 
 
