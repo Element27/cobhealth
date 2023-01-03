@@ -3,7 +3,8 @@ import { NavLink, Link } from 'react-router-dom'
 import { MenuIcon, CloseIcon } from '../../Assets/Icons/Icons'
 // import logo from '../../cobhealth.png'
 import smlogo from '../../cobhealth-logo.png'
-import { ABOUT, CONTACT, HOME } from '../../routes'
+import { ABOUT, CONTACT, HOME, TODASHBOARDS } from '../../routes'
+import { primaryButtonStyling } from '../../tailwindStyling'
 
 const NavBar = () => {
 
@@ -35,6 +36,7 @@ const NavBar = () => {
         <div className=' md:hidden grid w-full text-center'>
 
           <nav className="text-base grid justify-center w-full font-bold text-white">
+            <NavLink to={TODASHBOARDS} className={primaryButtonStyling}>To Dashboard</NavLink>
             <NavLink to={HOME} className="mb-4 hover:border-b-2 w-full font-bold ">Home</NavLink>
             <NavLink to={ABOUT} className="mb-4 hover:border-b-2 w-full font-bold ">About</NavLink>
             <NavLink to={CONTACT} className="mb-4 hover:border-b-2 w-full font-bold ">Contact</NavLink>
@@ -47,8 +49,9 @@ const NavBar = () => {
       {/* Large screen */}
       <div className='hidden md:flex items-center justify-center'>
 
-        <nav className="text-base justify-center flex">
-          <NavLink to={HOME} className="mr-5 text-white font-bold">Home</NavLink>
+        <nav className="text-base justify-center items-center flex">
+          <NavLink to={TODASHBOARDS} className={primaryButtonStyling}>To Dashboard</NavLink>
+          <NavLink to={HOME} className="mx-5 text-white font-bold">Home</NavLink>
           <NavLink to={ABOUT} className="mr-5 text-white font-bold">About</NavLink>
           <NavLink to={CONTACT} className="mr-5 text-white font-bold">Contact</NavLink>
         </nav>

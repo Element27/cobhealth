@@ -2,6 +2,7 @@
 export const HOME = "/"
 export const ABOUT = "/about"
 export const CONTACT = "/contact"
+export const TODASHBOARDS = "/todashboards"
 // Auth pages routing
 export const SIGNUP = "/signup"
 export const SIGNIN = "/signin"
