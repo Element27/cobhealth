@@ -50,7 +50,7 @@ const NavBar = () => {
       <div className='hidden md:flex items-center justify-center'>
 
         <nav className="text-base justify-center items-center flex">
-          <NavLink to={TODASHBOARDS} className={primaryButtonStyling}>To Dashboard</NavLink>
+          <NavLink to={TODASHBOARDS} className="text-white font-bold items-center bg-blue-900 border-0 py-1 px-5 focus:outline-none hover:bg-gray-200 rounded hover:text-blue-900 text-base my-4 md:my-0 ">To Dashboard</NavLink>
           <NavLink to={HOME} className="mx-5 text-white font-bold">Home</NavLink>
           <NavLink to={ABOUT} className="mr-5 text-white font-bold">About</NavLink>
           <NavLink to={CONTACT} className="mr-5 text-white font-bold">Contact</NavLink>
